@@ -7,7 +7,7 @@ Time spent: **6** hours spent in total
 
 ## Summary
 
-**Area of a Circle App** is an android app that **Creating an app that calculates the area of a circle given its radius**
+**Area of a Circle App** is an android app that **Creates an app that calculates the area of a circle given its radius**
 
 If I had to describe this project in three (3) emojis, they would be: **🥸🤖😵‍💫**
 
