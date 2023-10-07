@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApplication - Area of a Circle</string>
+    <string name="please_provide_a_radius_r">Please provide a radius (r):</string>
+    <string name="area_of_a_circle_calculator">Area of a Circle Calculator</string>
+    <string name="enter_radius">Enter radius</string>
+    <string name="solution">Solution</string>
+    <string name="solve">Solve</string>
+</resources>

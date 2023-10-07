@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@color/myBack"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/MainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area_of_a_circle_calculator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/Title"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_provide_a_radius_r"
+        app:layout_constraintStart_toStartOf="@id/MainTitle"
+        app:layout_constraintTop_toBottomOf="@id/MainTitle"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textColor="@color/texting"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="76dp"
+        app:layout_constraintBottom_toTopOf="@id/user"
+        app:layout_constraintStart_toStartOf="@id/MainTitle"
+        app:layout_constraintTop_toBottomOf="@id/MainTitle"
+        app:layout_constraintVertical_bias="0.509"
+        app:srcCompat="@drawable/cicle_area"
+        android:contentDescription="@null" />
+
+    <EditText
+        android:id="@+id/rad"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/enter_radius"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/user"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        android:autofillHints="number" />
+
+
+    <EditText
+        android:id="@+id/Solution"
+        android:layout_width="@id/rad"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:hint="@string/solution"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/rad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/rad"
+        app:layout_constraintTop_toBottomOf="@id/rad"
+        android:autofillHints="null" />
+
+    <Button
+        android:id="@+id/Solve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solve"
+        app:layout_constraintTop_toBottomOf="@id/Solution"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@id/Solution"
+        app:layout_constraintEnd_toEndOf="@id/Solution"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
